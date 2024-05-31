@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* General styling */
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  select,
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+</style>
+</head>
+<body>
+
+<h2>Blood Stock Availability</h2>
+
+<form action="/action_page.php">
+  <label for="state">State:</label><br>
+  <select id="state" name="state">
+    <!-- Add your options here -->
+  </select>
+  <br>
+  <label for="district">District:</label><br>
+  <select id="district" name="district">
+    <!-- Add your options here -->
+  </select>
+  <br>
+  <label for="bloodgroup">Blood Group:</label><br>
+  <select id="bloodgroup" name="bloodgroup">
+    <option value="all">All Blood Groups</option>
+    <!-- Add your options here -->
+  </select>
+  <br>
+  <label for="bloodcomponent">Blood Component:</label><br>
+  <select id="bloodcomponent" name="bloodcomponent">
+    <option value="whole">Whole Blood</option>
+    <!-- Add your options here -->
+  </select>
+  <br>
+  <input type="submit" value="Search">
+</form> 
+
+</body>
+</html>
+
